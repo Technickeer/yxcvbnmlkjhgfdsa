@@ -8,7 +8,7 @@ class KITProvider(SSOProvider):
 
     name = "KIT"
     domain = "kit.edu"
-    available_days_ahead = 3
+    available_days_ahead = 4
 
     def authenticate(self) -> str:
         self.session.headers.pop('x-requested-with', None)
